@@ -1,0 +1,7 @@
+name: glfw
+version: 0.1.0
+
+authors:
+  - Daniel Smith <jellymann@gmail.com>
+
+license: MIT
