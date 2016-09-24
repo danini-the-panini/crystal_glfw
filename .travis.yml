@@ -1,1 +1,21 @@
 language: crystal
+dist: trusty
+compiler:
+  - gcc
+
+before_install:
+  # GLFW requires a working X11 display
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  # Install dependencies
+  - sudo apt-get install -qq cmake g++-4.8 gcc-4.8 xorg-dev
+# Prepare manual installation of dependencies
+  - mkdir TRAVIS_TMP/ && cd TRAVIS_TMP
+# GLFW 3.1.2 install
+  - wget -O glfw-3.1.2.zip https://github.com/glfw/glfw/archive/3.1.2.zip
+  - unzip glfw-3.1.2.zip
+  - cd glfw-3.1.2
+  - cmake -DBUILD_SHARED_LIBS=ON -DGLFW_BUILD_EXAMPLES=OFF -DGLFW_BUILD_TESTS=OFF -DGLFW_BUILD_DOCS=OFF -DCMAKE_INSTALL_PREFIX=/usr -DLIB_SUFFIX=/x86_64-linux-gnu
+  - make
+  - sudo make install
+  - cd ..
