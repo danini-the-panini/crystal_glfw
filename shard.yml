@@ -4,4 +4,9 @@ version: 0.1.0
 authors:
   - Daniel Smith <jellymann@gmail.com>
 
+dependencies:
+  lib_glfw3:
+    github: jellymann/crystal_lib_glfw3
+    version: 0.1.0
+
 license: MIT
