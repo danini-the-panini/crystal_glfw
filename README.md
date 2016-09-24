@@ -1,6 +1,6 @@
 # GLFW for Crystal
 
-Idiomatic Crystal API to libglfw. This shard provides an OOP wrapper around [libglfw3](https://github.com/jellymann/crystal_lib_glfw3), to make it easier to write GLFW apps in Crystal.
+Idiomatic Crystal API to libglfw3. This shard provides an OOP wrapper around [libglfw3](https://github.com/jellymann/crystal_lib_glfw3), to make it easier to write GLFW apps in Crystal.
 
 ## Installation
 
