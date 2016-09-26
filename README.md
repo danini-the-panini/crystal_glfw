@@ -49,6 +49,13 @@ crystal spec
 ```
 
 
+## See also
+
+1. [LibGL bindings for Crystal](https://github.com/jellymann/crystal_lib_gl)
+2. [LibGLFW3 bindings for Crystal](https://github.com/jellymann/crystal_lib_glfw3)
+3. [Crystal OpenGL Samples](https://github.com/jellymann/crystal_opengl_samples)
+
+
 ## Contributing
 
 1. Fork it ( https://github.com/jellymann/crystal_glfw/fork )
