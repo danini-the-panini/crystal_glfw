@@ -1,7 +1,7 @@
 require "lib_glfw3"
 
 module GLFW
-  struct Monitor
+  class Monitor
     def initialize(@handle : LibGLFW3::Monitor)
     end
 

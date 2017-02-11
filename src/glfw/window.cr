@@ -1,7 +1,7 @@
 require "lib_glfw3"
 
 module GLFW
-  struct Window
+  class Window
     @handle : LibGLFW3::Window
 
     def initialize(@handle)
