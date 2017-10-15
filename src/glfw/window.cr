@@ -100,7 +100,7 @@ module GLFW
     end
 
     def hide
-      LibGLFW3.hideWindow(@hande)
+      LibGLFW3.hideWindow(@handle)
     end
 
     def monitor
