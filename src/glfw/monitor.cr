@@ -27,6 +27,7 @@ module GLFW
       count.times do |i|
         ary[i] = modes[i]
       end
+      ary
     end
 
     def video_mode : VideoMode
