@@ -30,7 +30,7 @@ module GLFW
     end
 
     def video_mode : VideoMode
-      LibGLFW3.getVideoMode(@monitor)[0]
+      LibGLFW3.getVideoMode(@handle)[0]
     end
 
     def gamma=(g : GammaRamp)
